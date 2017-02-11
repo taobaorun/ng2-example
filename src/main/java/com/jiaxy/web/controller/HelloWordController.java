@@ -1,5 +1,8 @@
 package com.jiaxy.web.controller;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
 /**
  * Title: <br>
  * <p>
@@ -12,6 +15,14 @@ package com.jiaxy.web.controller;
  *         <br>
  * @since 2017/1/14 23:44
  */
+@Controller
+@RequestMapping("/hello")
 public class HelloWordController {
+
+
+    @RequestMapping
+    public String helloWord() {
+        return "index";
+    }
 
 }
